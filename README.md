@@ -6,7 +6,7 @@
 
 ### CI STATUS
 
-[![Build Status](https://api.travis-ci.org/shadowsocks/simple-obfs-android.svg)](https://travis-ci.org/shadowsocks/simple-obfs-android)
+[![Build Status](https://api.travis-ci.org/newcode1/simple-obfs-android.svg)](https://travis-ci.org/newcode1/simple-obfs-android)
 
 ### PREREQUISITES
 
