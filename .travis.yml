@@ -51,6 +51,7 @@ before_deploy:
       # Set up git user name and tag this commit
       - git config --local user.name "newcode1"
       - git config --local user.email "newcode1@email.com"
+      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 
 deploy:
   provider: releases
