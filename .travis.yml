@@ -61,3 +61,4 @@ deploy:
 
 script:
     - $SBTPATH/sbt android:package
+    - md5sum target/android/output/obfs-local-debug.apk
