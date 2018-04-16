@@ -55,7 +55,7 @@ before_deploy:
 deploy:
   provider: releases
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  api_key: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   file: target/android/output/obfs-local-debug.apk
 
 script:
