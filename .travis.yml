@@ -57,3 +57,4 @@ deploy:
 
 script:
     - $SBTPATH/sbt android:package
+    - find . -name *.apk
