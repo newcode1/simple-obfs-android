@@ -52,7 +52,7 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
   keep-history: false
-  local-dir: $HOME/apks/
+  local-dir: target/android/output
   on:
     branch: master
 
