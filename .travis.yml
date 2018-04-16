@@ -47,16 +47,16 @@ install:
           popd;
       fi
 
+before_deploy:
+      # Set up git user name and tag this commit
+      - git config --local user.name "newcode1"
+      - git config --local user.email "newcode1@email.com"
+
 deploy:
-  provider: pages
+  provider: releases
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
-  keep-history: false
-  local-dir: target/android/output
-  on:
-    branch: master
+  file: target/android/output/obfs-local-debug.apk
 
 script:
     - $SBTPATH/sbt android:package
-    - cp -rf target/android/output/ $HOME/apks/
-    - ls -la $HOME/apks/
